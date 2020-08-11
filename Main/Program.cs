@@ -3,6 +3,7 @@ using DSCodes.Main.Stack;
 using DSCodes.Main.Queue;
 using DSCodes.Main.Strings;
 using DSCodes.Main.Tree;
+using DSCodes.Main.Sort;
 
 namespace DSCodes.Main
 {
@@ -54,6 +55,14 @@ namespace DSCodes.Main
             // Console.WriteLine("=====");
             // Console.WriteLine("层序遍历:");
             // bt.LevelOrder(root);
+
+            //快排
+            int[] arr = { 0,6,9,4,3,5,7 };
+            Console.WriteLine("排序前");
+            SortAlgorithm.Print(arr);
+            SortAlgorithm.QuickSort(arr, 0, arr.Length - 1);
+            Console.WriteLine("排序后");
+            SortAlgorithm.Print(arr);
 
 
         }
